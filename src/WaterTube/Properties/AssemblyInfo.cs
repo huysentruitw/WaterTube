@@ -8,9 +8,9 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyTitle("WaterTube")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("")]
+[assembly: AssemblyCompany("Huysentruit Wouter")]
 [assembly: AssemblyProduct("WaterTube")]
-[assembly: AssemblyCopyright("Copyright ©  2016")]
+[assembly: AssemblyCopyright("Copyright ©  2016 Huysentruit Wouter")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
