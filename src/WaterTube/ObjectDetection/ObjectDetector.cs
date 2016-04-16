@@ -106,12 +106,8 @@ namespace WaterTube.ObjectDetection
 
                                     if (radius > this.MinimumObjectRadius)
                                     {
-                                        //CvInvoke.DrawContours(filteredImage, contours, largestContourIndex.Value, new MCvScalar(255, 0, 0), 3, LineType.EightConnected, hierarchy);
                                         CvInvoke.Circle(filteredImage, circle.Center.ToPoint(), radius, new MCvScalar(255, 0, 0), 3, LineType.EightConnected);
                                         CvInvoke.Circle(originalImage, circle.Center.ToPoint(), radius, new MCvScalar(255, 0, 0), 3, LineType.EightConnected);
-
-                                        //var m = CvInvoke.Moments(contour);
-                                        //var center = new Point((int)(m.M10 / m.M00), (int)(m.M01 / m.M00));
                                         this.OnObjectDetected(center, radius);
                                     }
                                 }
